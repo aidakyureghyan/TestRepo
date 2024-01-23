@@ -1,14 +1,14 @@
-let a = [50, 20, 60, 20, 70];
+let array = [50, 20, 60, 20, 70];
 
-function solution(a) {
+function solution(array) {
     let oddIndexes = [];
     let evenIndexes = [];
 
-    for (let i = 0; i < a.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         if (i % 2 === 1) {
-            oddIndexes.push(a[i]);
+            oddIndexes.push(array[i]);
         } else {
-            evenIndexes.push(a[i]);
+            evenIndexes.push(array[i]);
         }
     }
 
@@ -19,4 +19,4 @@ function solution(a) {
     return [sumOfOdds, sumOfEvens];
 }
 
-console.log(solution(a));
+console.log(solution(arr));
